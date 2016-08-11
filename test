@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ -n "$1" ]; then
+   ruby $1 | tee "$1.out"
+else
+  echo "usage: test[file]"
+fi
+
